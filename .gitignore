@@ -181,3 +181,8 @@ xcuserdata
 .vscode
 
 build/
+
+
+#config file
+APIConfig.plist
+projectConfig.xcconfig
