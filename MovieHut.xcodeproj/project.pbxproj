@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		9109BF772CDE7B2800E09104 /* APIConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9109BF762CDE7B2800E09104 /* APIConfig.plist */; };
+		91D58CD02CDFAD2400428DCC /* projectConfig.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 91D58CCF2CDFAD2400428DCC /* projectConfig.xcconfig */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		917D057A2CDE520F00555F69 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,9 +29,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9109BF762CDE7B2800E09104 /* APIConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = APIConfig.plist; sourceTree = "<group>"; };
+		910D467A2CE1270900B20A3A /* MovieHut.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = MovieHut.xcodeproj; sourceTree = "<group>"; };
 		917D05692CDE520E00555F69 /* MovieHut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieHut.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		917D05792CDE520F00555F69 /* MovieHutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieHutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		917D05832CDE520F00555F69 /* MovieHutUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieHutUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		91D58CCF2CDFAD2400428DCC /* projectConfig.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = projectConfig.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -72,9 +80,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		910D467B2CE1270900B20A3A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		917D05602CDE520E00555F69 = {
 			isa = PBXGroup;
 			children = (
+				91D58CCF2CDFAD2400428DCC /* projectConfig.xcconfig */,
+				9109BF762CDE7B2800E09104 /* APIConfig.plist */,
 				917D056B2CDE520E00555F69 /* MovieHut */,
 				917D057C2CDE520F00555F69 /* MovieHutTests */,
 				917D05862CDE520F00555F69 /* MovieHutUITests */,
@@ -198,6 +215,12 @@
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 917D056A2CDE520E00555F69 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 910D467B2CE1270900B20A3A /* Products */;
+					ProjectRef = 910D467A2CE1270900B20A3A /* MovieHut.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				917D05682CDE520E00555F69 /* MovieHut */,
@@ -212,6 +235,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91D58CD02CDFAD2400428DCC /* projectConfig.xcconfig in Resources */,
+				9109BF772CDE7B2800E09104 /* APIConfig.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +296,7 @@
 /* Begin XCBuildConfiguration section */
 		917D058B2CDE520F00555F69 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91D58CCF2CDFAD2400428DCC /* projectConfig.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -334,6 +360,7 @@
 		};
 		917D058C2CDE520F00555F69 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91D58CCF2CDFAD2400428DCC /* projectConfig.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -390,13 +417,14 @@
 		};
 		917D058E2CDE520F00555F69 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91D58CCF2CDFAD2400428DCC /* projectConfig.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MovieHut/Preview Content\"";
-				DEVELOPMENT_TEAM = B59XTG4S49;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -409,7 +437,6 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.prime.moviehut.MovieHut;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -419,13 +446,14 @@
 		};
 		917D058F2CDE520F00555F69 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91D58CCF2CDFAD2400428DCC /* projectConfig.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MovieHut/Preview Content\"";
-				DEVELOPMENT_TEAM = B59XTG4S49;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -438,7 +466,6 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.prime.moviehut.MovieHut;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
