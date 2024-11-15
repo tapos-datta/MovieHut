@@ -32,6 +32,10 @@ final class ConfigLoader {
         return config?["BASE_URL"] as? String
     }
     
+    func getImageHostURL() -> String? {
+        return config?["IMAGE_HOST_URL"] as? String
+    }
+    
     func getAccessKey() -> String? {
         return config?["ACCESS_TOKEN"] as? String
     }

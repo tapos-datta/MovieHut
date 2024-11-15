@@ -15,6 +15,13 @@ struct NetworkConfiguration {
         }
         return url
     }
+    
+    static var imageHostingPath: String {
+        guard let url = ConfigLoader.shared.getImageHostURL() else {
+            fatalError("Base URL not found in configuration file.")
+        }
+        return url
+    }
         
     static var apiKey: String {
         guard let key = ConfigLoader.shared.getAPIKey() else {

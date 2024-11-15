@@ -31,10 +31,13 @@
 /* Begin PBXFileReference section */
 		9109BF762CDE7B2800E09104 /* APIConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = APIConfig.plist; sourceTree = "<group>"; };
 		910D467A2CE1270900B20A3A /* MovieHut.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = MovieHut.xcodeproj; sourceTree = "<group>"; };
+		916228B22CE73279006CA2F4 /* MovieHut.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = MovieHut.xcodeproj; sourceTree = "<group>"; };
 		917D05692CDE520E00555F69 /* MovieHut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieHut.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		917D05792CDE520F00555F69 /* MovieHutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieHutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		917D05832CDE520F00555F69 /* MovieHutUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieHutUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		91CF4FBB2CE645E100537B74 /* MovieHut.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = MovieHut.xcodeproj; sourceTree = "<group>"; };
 		91D58CCF2CDFAD2400428DCC /* projectConfig.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = projectConfig.xcconfig; sourceTree = "<group>"; };
+		91E1B8AF2CE250120079A8AF /* MovieHut.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = MovieHut.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -87,6 +90,11 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		916228B42CE73279006CA2F4 /* Products */ = {
+			isa = PBXGroup;
+			name = Products;
+			sourceTree = "<group>";
+		};
 		917D05602CDE520E00555F69 = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +114,16 @@
 				917D05792CDE520F00555F69 /* MovieHutTests.xctest */,
 				917D05832CDE520F00555F69 /* MovieHutUITests.xctest */,
 			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		91CF4FBD2CE645E100537B74 /* Products */ = {
+			isa = PBXGroup;
+			name = Products;
+			sourceTree = "<group>";
+		};
+		91E1B8B12CE250120079A8AF /* Products */ = {
+			isa = PBXGroup;
 			name = Products;
 			sourceTree = "<group>";
 		};
@@ -219,6 +237,18 @@
 				{
 					ProductGroup = 910D467B2CE1270900B20A3A /* Products */;
 					ProjectRef = 910D467A2CE1270900B20A3A /* MovieHut.xcodeproj */;
+				},
+				{
+					ProductGroup = 916228B42CE73279006CA2F4 /* Products */;
+					ProjectRef = 916228B22CE73279006CA2F4 /* MovieHut.xcodeproj */;
+				},
+				{
+					ProductGroup = 91E1B8B12CE250120079A8AF /* Products */;
+					ProjectRef = 91E1B8AF2CE250120079A8AF /* MovieHut.xcodeproj */;
+				},
+				{
+					ProductGroup = 91CF4FBD2CE645E100537B74 /* Products */;
+					ProjectRef = 91CF4FBB2CE645E100537B74 /* MovieHut.xcodeproj */;
 				},
 			);
 			projectRoot = "";
