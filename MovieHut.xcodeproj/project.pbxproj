@@ -31,6 +31,7 @@
 /* Begin PBXFileReference section */
 		9109BF762CDE7B2800E09104 /* APIConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = APIConfig.plist; sourceTree = "<group>"; };
 		910D467A2CE1270900B20A3A /* MovieHut.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = MovieHut.xcodeproj; sourceTree = "<group>"; };
+		910EEAF62D09FE0900A2B514 /* MovieHut.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = MovieHut.xcodeproj; sourceTree = "<group>"; };
 		916228B22CE73279006CA2F4 /* MovieHut.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = MovieHut.xcodeproj; sourceTree = "<group>"; };
 		917D05692CDE520E00555F69 /* MovieHut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieHut.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		917D05792CDE520F00555F69 /* MovieHutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieHutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,6 +88,11 @@
 			isa = PBXGroup;
 			children = (
 			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		910EEAF82D09FE0900A2B514 /* Products */ = {
+			isa = PBXGroup;
 			name = Products;
 			sourceTree = "<group>";
 		};
@@ -237,6 +243,10 @@
 				{
 					ProductGroup = 910D467B2CE1270900B20A3A /* Products */;
 					ProjectRef = 910D467A2CE1270900B20A3A /* MovieHut.xcodeproj */;
+				},
+				{
+					ProductGroup = 910EEAF82D09FE0900A2B514 /* Products */;
+					ProjectRef = 910EEAF62D09FE0900A2B514 /* MovieHut.xcodeproj */;
 				},
 				{
 					ProductGroup = 916228B42CE73279006CA2F4 /* Products */;

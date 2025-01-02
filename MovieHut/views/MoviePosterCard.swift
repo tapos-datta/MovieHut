@@ -16,15 +16,15 @@ struct MoviePosterCard: View {
         VStack(alignment: .leading) {
             ZStack {
                 Rectangle()
-                    .fill(Color.blue.opacity(0.45))
+                    .fill(Color.blue.opacity(0.35))
                 if self.imageLoader.image != nil {
                     Image(uiImage: self.imageLoader.image!)
                         .resizable()
                 }
             }
             .aspectRatio(CGSize(width: ScreenUtils.responsiveWidth(100), height: ScreenUtils.responsiveHeight(145.92)), contentMode: .fit)
-            .clipShape(RoundedRectangle(cornerRadius: ScreenUtils.responsiveWidth(16)))
-            .shadow(radius: 10)
+            .clipShape(RoundedRectangle(cornerRadius: ScreenUtils.responsiveWidth(8)))
+            .shadow(radius: 8)
             
         }
         .task {
@@ -36,5 +36,5 @@ struct MoviePosterCard: View {
 }
 
 #Preview {
-//    MoviePosterCard(movie: Movie(from: .mock))
+    //    MoviePosterCard(movie: Movie(from: .mock))
 }

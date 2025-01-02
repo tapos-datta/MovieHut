@@ -21,42 +21,48 @@ class BaseCategoryViewModel: ObservableObject {
         fatalError("This method should be overridden by subclasses")
     }
     
+    func fetchMovieWithContinuation(for endPoint : MovieListEndPoint) async {
+        return await withCheckedContinuation { continuation in
+            let store = MovieStore.shared
+            store.fetchMovies(endPoint: endPoint) { [weak self] result in
+                guard let self else { return }
+                if case .success(let movie) = result {
+                    self.movies = movie.results
+                }
+                if case .failure(let failure) = result {
+                    print(failure)
+                }
+                continuation.resume()
+            }
+        }
+    }
+    
 }
 
 class PopularCategoryViewModel: BaseCategoryViewModel {
     
     override func fetchMovies() async {
-        return await withCheckedContinuation { continuation in
-            let store = MovieStore.shared
-            store.fetchMovies(endPoint: .popular) { [weak self] result in
-                if case .success(let movie) = result {
-                    self?.movies = movie.results
-                }
-                if case .failure(let failure) = result {
-                    print(failure)
-                }
-            }
-        }
+        await fetchMovieWithContinuation(for: .popular)
     }
 }
 
 class UpcomingCategoryViewModel: BaseCategoryViewModel {
     
     override func fetchMovies() async {
-        fatalError("This method should be implemented")
+        await fetchMovieWithContinuation(for: .upcoming)
     }
 }
 
 class TopRatedCategoryViewModel: BaseCategoryViewModel {
     
     override func fetchMovies() async {
-        fatalError("This method should be implemented")
+        await fetchMovieWithContinuation(for: .topRated)
     }
 }
 
 class NowPlayingCategoryViewModel: BaseCategoryViewModel {
     
     override func fetchMovies() async {
-        fatalError("This method should be implemented")
+        await fetchMovieWithContinuation(for: .nowPlaying)
     }
 }
